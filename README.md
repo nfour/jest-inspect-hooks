@@ -44,6 +44,8 @@ Try this launch.json:
 
 ## Environments
 
+There are a few environments supplied. These require the respective peer dependency to work, though.
+
 ```ts
 module.exports = {
   testEnvironment: "jest-inspect-hooks/testEnvironment/NodeEnvironment",

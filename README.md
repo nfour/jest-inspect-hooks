@@ -18,6 +18,30 @@ module.exports = {
 }
 ```
 
+## VSCode
+
+Try this launch.json:
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "name": "Jest Inspect",
+      "request": "launch",
+      "protocol": "inspector",
+      "args": [ "--runInBand" ],
+      "console": "internalConsole",
+      "autoAttachChildProcesses": true,
+      "smartStep": true,
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+    }
+  ]
+}
+  
+```
+
 ## Environments
 
 ```ts
